@@ -16,7 +16,6 @@ El sistema permite visualizar el estado de inclinación del dispositivo de forma
 2. **Cambio de sensibilidad** mediante niveles: ±1g, ±0.5g, ±0.15g, ±0.05g
 3. **Brillo proporcional a inclinación**
 4. **Animación personalizada** (emoji o efecto)
-5. **Modo de prueba y depuración vía consola UART**
 
 ---
 
@@ -47,6 +46,6 @@ La aplicación utiliza una arquitectura no bloqueante basada en `delay_t`, y ges
 
 ## 👨‍💻 Autor
 
-**Alejo García Mata**  
+**Alejo S. García Mata**  
 
 Proyecto desarrollado para el Posgrado en Sistemas Embebidos – 2025.
