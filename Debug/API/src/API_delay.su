@@ -1,0 +1,4 @@
+../API/src/API_delay.c:5:6:delayInit	16	static
+../API/src/API_delay.c:12:8:delayRead	24	static
+../API/src/API_delay.c:33:6:delayWrite	16	static
+../API/src/API_delay.c:38:8:delayIsRunning	16	static

@@ -1,0 +1,10 @@
+../Core/Src/main_app.c:82:13:app_nextSensitivityLevel	72	static
+../Core/Src/main_app.c:99:13:app_initLedMatrix	8	static
+../Core/Src/main_app.c:113:13:app_initAcc	8	static
+../Core/Src/main_app.c:131:13:app_do_level	8	static
+../Core/Src/main_app.c:141:13:app_do_intensity	8	static
+../Core/Src/main_app.c:146:13:app_do_custom_animation	8	static
+../Core/Src/main_app.c:151:6:app_nextMode	8	static
+../Core/Src/main_app.c:191:13:app_do	64	static
+../Core/Src/main_app.c:240:6:app_setup	8	static
+../Core/Src/main_app.c:251:6:app_run	8	static

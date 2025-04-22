@@ -1,0 +1,13 @@
+../myDrivers/LedMatrix/src/ledMatrix.c:13:13:LedMatrix_WriteRow	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:22:17:LedMatrix_Refresh	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:33:17:LedMatrix_ForceRefresh	8	static
+../myDrivers/LedMatrix/src/ledMatrix.c:38:17:LedMatrix_setup	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:45:17:LedMatrix_Init	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:56:17:LedMatrix_intensity	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:62:6:LedMatrix_Clear	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:66:6:LedMatrix_SetPixel	24	static
+../myDrivers/LedMatrix/src/ledMatrix.c:78:6:LedMatrix_SetSinglePixel	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:98:6:LedMatrix_SetBlock	32	static
+../myDrivers/LedMatrix/src/ledMatrix.c:112:6:LedMatrix_LoadBitmap	24	static
+../myDrivers/LedMatrix/src/ledMatrix.c:118:6:LedMatrix_SweepLeft_Circular	16	static
+../myDrivers/LedMatrix/src/ledMatrix.c:126:6:LedMatrix_SweepRight	16	static

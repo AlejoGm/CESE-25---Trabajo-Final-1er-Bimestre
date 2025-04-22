@@ -1,0 +1,5 @@
+../API/src/API_uart.c:21:13:uartPrintConfigHex	1
+../API/src/API_uart.c:41:6:uartSendString	4
+../API/src/API_uart.c:46:6:uartSendStringSize	5
+../API/src/API_uart.c:51:6:uartReceiveStringSize	5
+../API/src/API_uart.c:56:6:uartInit	2

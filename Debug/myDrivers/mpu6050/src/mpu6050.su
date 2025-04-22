@@ -1,0 +1,9 @@
+../myDrivers/mpu6050/src/mpu6050.c:6:6:mpu6050_Init	24	static
+../myDrivers/mpu6050/src/mpu6050.c:47:6:MPU6050_ReadAccel	16	static
+../myDrivers/mpu6050/src/mpu6050.c:59:6:MPU6050_ReadGyro	16	static
+../myDrivers/mpu6050/src/mpu6050.c:71:6:MPU6050_ReadTemp	16	static
+../myDrivers/mpu6050/src/mpu6050.c:81:6:MPU6050_ReadAll	8	static
+../myDrivers/mpu6050/src/mpu6050.c:86:23:MPU6050_GetData	4	static
+../myDrivers/mpu6050/src/mpu6050.c:91:7:MPU6050_ConvertTemp	16	static
+../myDrivers/mpu6050/src/mpu6050.c:97:6:MPU6050_GetAccelG	24	static
+../myDrivers/mpu6050/src/mpu6050.c:104:6:MPU6050_GetGyroDPS	24	static
