@@ -39,8 +39,8 @@ La aplicación utiliza una arquitectura no bloqueante basada en `delay_t`, y ges
   - SPI (para MAX7219)
   - UART (opcional para logs)
 - Drivers disponibles por separado:
-  - [Driver MPU6050](https://github.com/AlejoGm/mpu6050-driver)
-  - [Driver LED Matrix MAX7219](https://github.com/AlejoGm/ledmatrix-driver)
+  - [Driver MPU6050](https://github.com/AlejoGm/PCSE-Drivers/tree/main/mpu6050)
+  - [Driver LED Matrix MAX7219](https://github.com/AlejoGm/PCSE-Drivers/tree/main/LedMatrix)
 
 ---
 
