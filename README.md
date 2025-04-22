@@ -22,9 +22,11 @@ El sistema permite visualizar el estado de inclinación del dispositivo de forma
 ## 🧱 Estructura del código
 
 ```
-/app
-├── main_app.c       # Lógica de la aplicación (setup, run y modos)
-├── main_app.h       # API pública
+/Core
+├─  src/
+│     └──  main_app.c  ...     # Lógica de la aplicación (setup, run y modos)
+└── inc/
+     └──  main_app.h   ...    # API pública
 ```
 
 La aplicación utiliza una arquitectura no bloqueante basada en `delay_t`, y gestiona el cambio de modos mediante una FSM simple con detección de flanco de botón.
