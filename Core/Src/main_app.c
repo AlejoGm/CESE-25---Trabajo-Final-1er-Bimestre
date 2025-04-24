@@ -65,7 +65,6 @@ AccelMatrixLevelConfig_t map_intensity = {
 
 static const float acc_levels[] = {1.0f, 0.5f, 0.15f, 0.05f};
 static const size_t acc_level_size = sizeof(acc_levels) / sizeof(acc_levels[0]);
-static uint8_t current_level = 0;
 
 typedef enum {
     APP_MODE_LEVEL_CYCLE_1 = 0,     // Modo: ciclo de sensibilidad por botón 1
@@ -91,7 +90,7 @@ static void app_nextSensitivityLevel(AppMode_t current_mode)
 
     // Mostrar por consola
     char buf[50];
-    sprintf(buf, "Sensibilidad: ±%.2f g\r\n", acc_levels[current_level]);
+    sprintf(buf, "Sensibilidad: ±%.2f g\r\n", acc_levels[current_mode]);
     LOG(buf);
 }
 
@@ -106,7 +105,7 @@ static void app_initLedMatrix() {
 		Error_Handler();
 	}
 	LOG("OK\r\n");
-	app_nextSensitivityLevel(true);
+	app_nextSensitivityLevel(APP_MODE_LEVEL_CYCLE_1);
 }
 
 static void app_initAcc(){
