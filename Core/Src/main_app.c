@@ -64,6 +64,7 @@ AccelMatrixLevelConfig_t map_intensity = {
 };
 
 static const float acc_levels[] = {1.0f, 0.5f, 0.15f, 0.05f};
+static const size_t acc_level_size = sizeof(acc_levels) / sizeof(acc_levels[0]);
 static uint8_t current_level = 0;
 
 typedef enum {
@@ -79,16 +80,14 @@ typedef enum {
 static AppMode_t app_mode = APP_MODE_LEVEL_CYCLE_1;
 
 
-static void app_nextSensitivityLevel(bool reset)
+static void app_nextSensitivityLevel(AppMode_t current_mode)
 {
-	if(reset){
-		current_level = 0;
-	}else{
-		current_level = (current_level + 1)
-				% (sizeof(acc_levels) / sizeof(acc_levels[0]));
+	if (current_mode > (acc_level_size - 1)
+			|| current_mode > APP_MODE_LEVEL_CYCLE_4) {
+		return;
 	}
 
-    level_config->acc_max_abs_val = acc_levels[current_level];
+    level_config->acc_max_abs_val = acc_levels[current_mode];
 
     // Mostrar por consola
     char buf[50];
@@ -155,17 +154,17 @@ void app_nextMode(void)
 	switch (app_mode) {
 	case APP_MODE_LEVEL_CYCLE_1:
 		level_config = &block_config;
-		app_nextSensitivityLevel(true);
+		app_nextSensitivityLevel(APP_MODE_LEVEL_CYCLE_1);
 		delayWrite(&app_delay, FAST_DELAY);
 		break;
 	case APP_MODE_LEVEL_CYCLE_2:
-		app_nextSensitivityLevel(false);
+		app_nextSensitivityLevel(APP_MODE_LEVEL_CYCLE_2);
 		break;
 	case APP_MODE_LEVEL_CYCLE_3:
-		app_nextSensitivityLevel(false);
+		app_nextSensitivityLevel(APP_MODE_LEVEL_CYCLE_3);
 		break;
 	case APP_MODE_LEVEL_CYCLE_4:
-		app_nextSensitivityLevel(false);
+		app_nextSensitivityLevel(APP_MODE_LEVEL_CYCLE_4);
 		break;
 	case APP_MODE_INTENSITY_BY_TILT:
 		LOG("Brillo por inclinación\r\n");
