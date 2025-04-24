@@ -231,7 +231,7 @@ static void app_do() {
 			delayRead(&app_delay);
 
 		}else {
-			LOG("ERROR - resetting acc \r");
+			LOG("ERROR\r");
 		}
 	}
 }
