@@ -1,4 +1,0 @@
-../API/src/API_delay.c:5:6:delayInit	3
-../API/src/API_delay.c:12:8:delayRead	4
-../API/src/API_delay.c:33:6:delayWrite	3
-../API/src/API_delay.c:38:8:delayIsRunning	2

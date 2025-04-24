@@ -1,4 +1,0 @@
-../API/src/API_debounce.c:25:13:readKey	2
-../API/src/API_debounce.c:34:13:isKeyPressed	1
-../API/src/API_debounce.c:38:6:debounceFSM_init	1
-../API/src/API_debounce.c:43:6:debounceFSM_update	11

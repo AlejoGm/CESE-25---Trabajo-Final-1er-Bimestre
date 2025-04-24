@@ -1,2 +1,0 @@
-../myDrivers/LedMatrix/src/ledMatrix_port.c:9:6:MAX7219_setup	16	static
-../myDrivers/LedMatrix/src/ledMatrix_port.c:15:6:MAX7219_Write	24	static

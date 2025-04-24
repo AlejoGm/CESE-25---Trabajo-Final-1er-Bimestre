@@ -1,5 +1,0 @@
-../API/src/API_uart.c:21:13:uartPrintConfigHex	64	static
-../API/src/API_uart.c:41:6:uartSendString	24	static
-../API/src/API_uart.c:46:6:uartSendStringSize	24	static
-../API/src/API_uart.c:51:6:uartReceiveStringSize	24	static
-../API/src/API_uart.c:56:6:uartInit	8	static
